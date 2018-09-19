@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style>
+.tab a
+{
+	float: right;
+	font-size: 20px;
+	color: black;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-decoration: none;
+	border-right: ridge;
+	border-width: thin;
+	font-family: Trebuchet MS;
+
+}
+.z
+{
+	background-color: white;
+	border: ridge;
+	border-width: thin;
+	width: 100%;
+	height: 20px;
+}
+
+.y
+{
+	background-color: white;
+	border:ridge;
+	border-width: thin;
+	border-top: hidden;
+	width:100%;
+	height:32px;
+	text-align: center;
+}
+.pic
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	
+}
+
+.dr
+{
+	float: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right:ridge;
+	border-width: thin;
+}
+.dro
+{
+	height: 20px;
+	border:none;
+	font-family: Trebuchet MS;
+	font-size: 20px;
+}
+
+.e
+{
+	float:left;
+	padding-right: 15px;
+	border-right: ridge;
+	border-width: thin;
+	font-family: Trebuchet MS;
+	font-size: 10px;
+	padding-left: 5px;
+	padding-top:1px;
+}
+.f
+{
+	float: left;
+	padding-left: 15px;
+	font-family: Trebuchet MS;
+	font-size: 10px;
+	padding-left: 5px;
+	padding-top:1px;
+
+}
+.g
+{
+	float:right;
+	font-family: Trebuchet MS;
+	font-size: 10px;
+
+}
+
+.bas
+{
+	border-right: ridge;
+	border-width: thin;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+.sta
+{
+	border-right: ridge;
+	border-width: thin;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+body
+{
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.bus
+{
+	position: absolute;
+	left: 420px;
+	top:70px;
+}
+
+h1,p
+{
+	font-family: Trebuchet MS;
+}
+
+ body 
+    {
+      font-family:Trebuchet MS;
+    }
+
+.container 
+{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+#button 
+{
+     cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  background: rgba(255, 255, 255,0);
+}
+
+#button:hover,.read-more-trigger:hover 
+{
+     background:black;
+     color:white; 
+}
+
+
+.text 
+{
+  color:white;
+  font-size: 19px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 48px;
+  top: 71px;
+  text-align: justify-all;
+}
+
+.numbertext 
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover
+{
+  background-color: #717171;
+}
+
+.fade
+ {
+  animation-name: fade;
+  animation-duration: 1.7s;
+  animation-name: fade;
+  animation-duration: 1.7s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  .read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+#containers
+{
+	background-color:#F4F4F4;
+	height:400px;
+	width:60.24%;
+	margin:0px auto;
+}
+#para1
+{
+	margin-top:15px;
+	width:60%;
+background-color:none;
+color:black;
+
+height:50px;
+float:left;
+
+}
+#para2
+{
+	margin-top:15px;
+	width:70%;
+background-color:none;
+color:#B8B8B8;
+height:150px;
+float:left;
+}
+#para3
+{
+	width:70%;
+	height:30px;
+	background-color:none;
+	color:#B8B8B8;
+	float:left;
+}
+#sign
+{
+	width:30%;
+	height:50px;
+	background-color:none;
+	color:#B8B8B8;
+	float:right;
+}
+
+/*drag css start*/
+    .open
+    {
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 63px;
+        right: 30px;
+        width: 50px;
+        padding:10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease;
+    }
+
+    /* The popup form - hidden */
+    .form-popup {
+      display: none;
+      position: fixed;
+      top:10px;
+      right:15px;
+      border: none;
+      z-index: 9;
+    }
+
+    /* Add styles to the form container */
+    #form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: grey;
+      cursor: move;
+      z-index: 10;
+      transition: all 0.3s ease;
+    }
+    /*close button style*/
+    #form-container .btn {
+      background-color: #4CAF50;
+      color: grey;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      margin-bottom:10px;
+      opacity: 0.8;
+      background-color: white;
+      margin:auto;
+      display:block;
+    }
+    /*container paragraph content align*/
+    .tit{
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+    /*container h1 content align*/
+    .t{
+      text-align: center;
+    }
+
+    #form-container .btn:hover, .open:hover {
+      opacity: 1;
+    }
+/*drag css end*/
+
+
+
+
+h4
+{
+padding-left:350px;
+font-size:20px;
+display:inline;
+color:white;
+}
+.navbar {
+   background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.nav-right {
+ padding-right:20px;
+  float: right;
+}
+.nav-left a
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.nav-left a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+	<header class="z">
+		<div class="e"><img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/location-alt-512.png" height="10px"> Australia place mlce, RO mlce DHA Road, state pace 786</div>
+		<div class="f"><img src="https://cdn1.iconfinder.com/data/icons/outline-e-mail-user-interface-vol-1/32/03-512.png" height="10px"> support@theberg.com</div>
+		<div class="g"><img src="http://www.clker.com/cliparts/7/m/I/2/3/J/icon-mobile-phone-hi.png" height="12px"> +11(0)200 1111 001</div>
+	</header>
+	
+	<header class="y">
+		<img src="http://www.endlessicons.com/wp-content/uploads/2015/08/search-icon-2-614x460.png" class="pic" align="right" height="20px">
+		<div class="dr">
+			<select class="dro">
+				<option>Eng</option>
+				<option>French</option>
+				<option>Hindi</option>
+				<option>Japanese</option>
+				<option>Russian</option>
+			</select>
+		</div>
+		<img class="bas" src="https://static.thenounproject.com/png/2370-200.png" class="pic" align="right" height="20px">
+		<img class="sta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Star_outline.svg/2000px-Star_outline.svg.png" class="pic" align="right" height="20px">
+		<div class="tab">
+			<a href="Elements.html">ELEMENTS</a>
+			<a href="Shop.html">SHOP</a>
+			<a href="Portfolio.html">PORTFOLIO</a>
+			<a href="Blog.html">BLOG</a>
+			<a href="page.html">PAGES</a>
+			<a href="home.html">HOME</a>
+		</div>
+		<img src="https://www.wearethebergs.com/wp-content/uploads/pp/images/1485286169-Logo-Hover.png" align="left" height="22px" style="padding-top: 5px;">
+	</header>
+
+
+<div class="container">
+  
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://st3.idealista.it/news/archivie/2018-08/newyork.jpg?sv=o0KbCDeq" style="width:100%; height: 411px">
+  <div class="text"><p>A SMALL STUDIO IN NEW <br> YORK MAKING WEBSITES <br> AND KILLER APPS.</p>
+  <h6>Berg Studios is an film, television<br> acting studio and theatre space in<br> Atwater Village, California.</h6>
+ <input type="checkbox" class="read-more-state" id="post-1" />
+
+  <h6 id="me" class="read-more-wrap"> <span class="read-more-target" style="text-align: justify-all;">Lorem ipsum dolor sit amet. Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia quis ab?Excepturi vero tempore minus beatae voluptatem!</span></h6>
+  
+  <label for="post-1" class="read-more-trigger"></label>         <button id="button">purchase</button>
+<p id="a"> </p> </div>
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/07/wood-wallpaper-background-dark-1500x500.jpg" style="width:100%; height: 411px">
+  <div class="text"><p>A SMALL STUDIO IN NEW <br> YORK MAKING WEBSITES <br> AND KILLER APPS.</p>
+  <h6>Berg Studios is an film,<br> television acting studio and theatrespace in<br> Atwater Village, California.</h6>
+  <input type="checkbox" class="read-more-state" id="post-1" />
+
+  <h6 id="me" class="read-more-wrap"> <span class="read-more-target" style="text-align: justify-all;">Lorem ipsum dolor sit amet. Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia quis ab?Excepturi vero tempore minus beatae voluptatem!</span></h6>
+  
+  <label for="post-1" class="read-more-trigger"></label>         <button id="button">purchase</button>
+  <p id="a"> </p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://media.istockphoto.com/videos/program-code-video-id187867605?s=640x640" style="width:100%; height: 411px">
+   <div class="text"><p>A SMALL STUDIO IN NEW <br> YORK MAKING WEBSITES <br> AND KILLER APPS.</p>
+  <h6>Berg Studios is an film,<br> television acting studio and theatre space in<br> Atwater Village, California.</h6>
+  <input type="checkbox" class="read-more-state" id="post-1" />
+
+  <h6 id="me" class="read-more-wrap"> <span class="read-more-target" style="text-align: justify-all;">Lorem ipsum dolor sit amet. Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia quis ab?Excepturi vero tempore minus beatae voluptatem!</span></h6>
+  
+  <label for="post-1" class="read-more-trigger"></label>         <button id="button">purchase</button>
+  <p id="a"> </p></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!-- drag content start-->
+<img src="http://bnbnation.com/assects/images/profileImg.png" class="open" onclick="openForm()">
+
+    <div class="form-popup" id="myForm">
+        <div action="/action_page.php" id="form-container">
+          <img src="http://ceosforcitiesnationalmeeting.org/wp-content/uploads/2015/10/Abbott-Dave.jpg" alt="Berg" align="center" style="width:60%;border-radius: 100%;margin:auto;display:block;">
+          <h1 class="t">Brad Berg</h1>
+          <p class="tit">CEO & Founder of BERG CREATIVE</p>
+          <p class="tit">"I am pleased to welcome you to the BERG CREATIVE website. BERG CREATIVE is a small studio that is Driving Progress with our customers and partners, building better communities through safe, smart, efficient designing and codes. Something we have been doing consistently for the past 3 years."</p>
+
+          <button type="submit" class="btn" onclick="closeForm()">Close</button>
+        </div>
+    </div>
+<!-- drag content end -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) 
+{
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) 
+{
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) 
+{
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) 
+    {
+      slideIndex = 1
+    }    
+  if (n < 1) 
+    {
+      slideIndex = slides.length
+    }
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+//drag script start
+function openForm() 
+      {
+          document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() 
+      {
+          document.getElementById("myForm").style.display = "none";
+      }
+
+      //Make the image draggagle:
+      dragElement(document.getElementById("myForm"));
+
+      function dragElement(elmnt) 
+      {
+          var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+          if (document.getElementById(elmnt.id + "header"))
+          {
+            /* if present, the header is where you move the DIV from:*/
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+          } 
+          else
+          {
+            /* otherwise, move the DIV from anywhere inside the DIV:*/
+            elmnt.onmousedown = dragMouseDown;
+          }
+
+          function dragMouseDown(e) 
+          {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+          }
+
+          function elementDrag(e) 
+          {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() 
+        {
+            /* stop moving when mouse button is released:*/
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+      }
+
+
+</script>
+
+//drag script end
+
+	<div id="containers">
+<div id="para1">
+<p><h2 style="font-family:Trebuchet MS">WELCOME TO BERG STUDIO</h2></p>
+</div>
+<div id="para2">
+<p><h5 style="font-family:Trebuchet MS"">LOOKING FOR EXCLUSIVE DIGITAL SERVICES?</h5><p>
+<p><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+ nostrud exercitation ullamco laboris nisi ut aliqup ed ea commodo
+ consequat. Duis aote irure dolor in reprehendent in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+ . Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunit mollit anim id est laborum.</h4></p></div>
+ <div id="para3">
+ <p><h5 style="font-family:Trebuchet MS"><br><br>Mr.Gerald Deck</div>
+<div id="sign"><img src="sign.jpg" height="60" width="80%"/>
+</div><br>Ceo</h5></p>
+ </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+        
